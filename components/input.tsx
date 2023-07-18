@@ -14,11 +14,11 @@ export default function Input({
   label,
   name,
   kind = "text",
+  // ...rest
   register,
   type,
   required,
-}: // ...rest
-InputProps) {
+}: InputProps) {
   return (
     <div>
       <label
