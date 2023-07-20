@@ -22,7 +22,14 @@ const Enter: NextPage = () => {
     setMethod("phone");
   };
   const onValid = (data: EnterForm) => {
-    console.log(data);
+    // console.log(data);
+    fetch("api/users/enter", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
   };
   // console.log(watch());
   return (
